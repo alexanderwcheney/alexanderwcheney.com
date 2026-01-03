@@ -1,0 +1,19 @@
+---
+description: Standards for Senior Next.js 15, React 19, and Tailwind development.
+globs: ["**/*.{ts,tsx}"]
+alwaysApply: true
+---
+
+# Senior Web Development Standards
+
+- **React 19 & Next.js 15:** Use Server Components (RSC) by default. Only use `'use client'` for components with interactivity (hooks/events).
+- **TypeScript:** No `any`. Use interfaces for component props. Use functional components (`const Component = ({ prop }: Props) => ...`).
+- **Tailwind CSS:** Use mobile-first design. Prefer utility classes over custom CSS. Use the `cn()` utility for conditional classes.
+- **Project Structure:** - Components in `src/components/`
+  - Logic/Utilities in `src/lib/`
+  - Page routes in `src/app/`
+- **Modern UI:** - Use `lucide-react` for icons.
+  - Implement "Bento Grid" layouts for the portfolio section.
+  - Use `framer-motion` for subtle entrance animations.
+- **Data Fetching:** For the Substack RSS feed, use a Server Component with an `async/await` fetch pattern.
+- **Resume:** Maintain a structured `JSON` object for career data to keep the UI decoupled from the content.

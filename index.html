@@ -1,10 +1,468 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Alexander W Cheney</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alexander W Cheney - Personal website showcasing projects, blog, and professional background">
+    <meta name="keywords" content="Alexander Cheney, developer, portfolio, blog">
+    <meta name="author" content="Alexander W Cheney">
+
+    <title>Alexander W Cheney | Developer & Professional</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexanderwcheney.com/">
+    <meta property="og:title" content="Alexander W Cheney | Developer & Professional">
+    <meta property="og:description" content="Personal website showcasing projects, blog, and professional background">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alexanderwcheney.com/">
+    <meta property="twitter:title" content="Alexander W Cheney | Developer & Professional">
+    <meta property="twitter:description" content="Personal website showcasing projects, blog, and professional background">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to my website</h1>
-    <p>This is my personal website.</p>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#home">Alexander W Cheney</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <span>&times;</span>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Theme toggle -->
+            <div class="theme-toggle" id="theme-toggle">
+                <span class="theme-toggle__icon">🌙</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Hi, I'm <span class="home__title-highlight">Alexander</span>
+                        </h1>
+                        <h2 class="home__subtitle">Developer & Professional</h2>
+                        <p class="home__description">
+                            Welcome to my personal space on the web. I'm passionate about creating
+                            meaningful digital experiences and sharing insights through code and writing.
+                        </p>
+                        <div class="home__buttons">
+                            <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                            <a href="#portfolio" class="btn btn--secondary">View My Work</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <div class="home__blob">
+                        <img src="images/profile.jpg" alt="Alexander W Cheney" class="home__img-photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button">
+                    <span class="home__scroll-text">Scroll down</span>
+                    <span class="home__scroll-arrow">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="images/about.jpg" alt="About Alexander" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        I'm a passionate developer with a love for creating clean, efficient solutions
+                        to complex problems. With a background in [Your Field], I bring a unique
+                        perspective to every project I work on.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">Years</span>
+                            <span class="about__info-name">Experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">Projects</span>
+                            <span class="about__info-name">Completed</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">Happy</span>
+                            <span class="about__info-name">Clients</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/Alexander-CV.pdf" class="btn btn--primary">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <div>
+                            <h1 class="skills__title">Frontend Development</h1>
+                            <span class="skills__subtitle">Creating responsive user interfaces</span>
+                        </div>
+
+                        <span class="skills__arrow">↓</span>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML/CSS</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/portfolio1.jpg" alt="Portfolio Project 1" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">
+                                A responsive website built with modern web technologies
+                                featuring clean design and optimal performance.
+                            </p>
+                            <a href="#" class="btn btn--small btn--link">
+                                Demo
+                                <span class="btn__icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/portfolio2.jpg" alt="Portfolio Project 2" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Web Application</h3>
+                            <p class="portfolio__description">
+                                A full-featured web application with user authentication,
+                                real-time updates, and intuitive user interface.
+                            </p>
+                            <a href="#" class="btn btn--small btn--link">
+                                Demo
+                                <span class="btn__icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/portfolio3.jpg" alt="Portfolio Project 3" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mobile App</h3>
+                            <p class="portfolio__description">
+                                A cross-platform mobile application with native performance
+                                and beautiful, user-friendly design.
+                            </p>
+                            <a href="#" class="btn btn--small btn--link">
+                                Demo
+                                <span class="btn__icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-button-next">
+                    <span class="portfolio__icon">→</span>
+                </div>
+                <div class="swiper-button-prev">
+                    <span class="portfolio__icon">←</span>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog section" id="blog">
+            <h2 class="section__title">Blog</h2>
+            <span class="section__subtitle">Latest thoughts and insights</span>
+
+            <div class="blog__container container grid">
+                <article class="blog__card">
+                    <div class="blog__img">
+                        <img src="images/blog1.jpg" alt="Blog post 1" class="blog__img-photo">
+                    </div>
+
+                    <div class="blog__data">
+                        <h3 class="blog__title">
+                            <a href="blog/posts/getting-started-with-modern-web-development.html">
+                                Getting Started with Modern Web Development
+                            </a>
+                        </h3>
+                        <p class="blog__description">
+                            Exploring the latest trends and best practices in web development,
+                            from frameworks to deployment strategies.
+                        </p>
+                        <div class="blog__meta">
+                            <span class="blog__date">Sept 15, 2024</span>
+                            <span class="blog__read-time">5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog__card">
+                    <div class="blog__img">
+                        <img src="images/blog2.jpg" alt="Blog post 2" class="blog__img-photo">
+                    </div>
+
+                    <div class="blog__data">
+                        <h3 class="blog__title">
+                            <a href="blog/posts/building-responsive-layouts.html">
+                                Building Responsive Layouts That Actually Work
+                            </a>
+                        </h3>
+                        <p class="blog__description">
+                            A comprehensive guide to creating layouts that look great
+                            on any device using modern CSS techniques.
+                        </p>
+                        <div class="blog__meta">
+                            <span class="blog__date">Sept 10, 2024</span>
+                            <span class="blog__read-time">8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog__card">
+                    <div class="blog__img">
+                        <img src="images/blog3.jpg" alt="Blog post 3" class="blog__img-photo">
+                    </div>
+
+                    <div class="blog__data">
+                        <h3 class="blog__title">
+                            <a href="blog/posts/javascript-performance-tips.html">
+                                JavaScript Performance Tips for 2024
+                            </a>
+                        </h3>
+                        <p class="blog__description">
+                            Learn about the latest JavaScript optimization techniques
+                            to make your applications faster and more efficient.
+                        </p>
+                        <div class="blog__meta">
+                            <span class="blog__date">Sept 5, 2024</span>
+                            <span class="blog__read-time">6 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog__button">
+                <a href="blog/index.html" class="btn btn--primary">View All Posts</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <div class="contact__info">
+                            <span class="contact__icon">📧</span>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">hello@alexanderwcheney.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__info">
+                            <span class="contact__icon">📍</span>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Your City, Country</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#" class="contact__form grid" id="contact-form">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" name="name" class="contact__input" required>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" name="email" class="contact__input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                    </div>
+
+                    <div class="contact__newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="contact__checkbox">
+                        <label for="newsletter" class="contact__checkbox-label">
+                            Subscribe to my newsletter for updates and insights
+                        </label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn--primary">
+                            Send Message
+                            <span class="btn__icon">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Alexander W Cheney</h1>
+                    <span class="footer__subtitle">Developer & Professional</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="footer__link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" class="footer__social">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" class="footer__social">
+                        GitHub
+                    </a>
+                    <a href="https://twitter.com/your-handle" target="_blank" class="footer__social">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 Alexander W Cheney. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <span class="scrollup__icon">↑</span>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

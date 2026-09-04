@@ -19,7 +19,7 @@ const Home = () => {
       <svg
         viewBox="0 0 800 460"
         role="img"
-        aria-label="Graph of five branches — Mind, Body, Spirit, Heart, and Work — growing from a single root node"
+        aria-label="Graph of five branches — Mind, Body, Spirit, Heart, and Work — growing from a single root node labeled Time"
         className="w-full max-w-3xl"
       >
         {branches.map(({ label, x }) => (
@@ -55,7 +55,7 @@ const Home = () => {
           className="font-serif"
           fontSize="20"
         >
-          root
+          Time
         </text>
       </svg>
     </main>

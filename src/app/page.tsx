@@ -3,7 +3,7 @@ const branches = [
   { label: "Body", x: 240 },
   { label: "Spirit", x: 400 },
   { label: "Heart", x: 560 },
-  { label: "Work", x: 720 },
+  { label: "Work", x: 720, href: "/coaching/" },
 ];
 
 const root = { x: 400, y: 380 };
@@ -18,33 +18,45 @@ const Home = () => {
 
       <svg
         viewBox="0 0 800 460"
-        role="img"
+        role="group"
         aria-label="Graph of five branches — Mind, Body, Spirit, Heart, and Work — growing from a single root node labeled Time"
         className="w-full max-w-3xl"
       >
-        {branches.map(({ label, x }) => (
-          <g key={label}>
-            <path
-              d={`M ${root.x} ${root.y} C ${root.x} ${root.y - 120}, ${x} ${
-                branchY + 120
-              }, ${x} ${branchY}`}
-              fill="none"
-              stroke="#57534e"
-              strokeWidth="2"
-            />
-            <circle cx={x} cy={branchY} r="8" fill="#f59e0b" />
-            <text
-              x={x}
-              y={branchY - 24}
-              textAnchor="middle"
-              fill="#e7e5e4"
-              className="font-serif"
-              fontSize="22"
-            >
-              {label}
-            </text>
-          </g>
-        ))}
+        {branches.map(({ label, x, href }) => {
+          const node = (
+            <>
+              <path
+                d={`M ${root.x} ${root.y} C ${root.x} ${root.y - 120}, ${x} ${
+                  branchY + 120
+                }, ${x} ${branchY}`}
+                fill="none"
+                stroke="#57534e"
+                strokeWidth="2"
+              />
+              <circle cx={x} cy={branchY} r="8" fill="#f59e0b" />
+              <text
+                x={x}
+                y={branchY - 24}
+                textAnchor="middle"
+                fill="#e7e5e4"
+                className={`font-serif${
+                  href ? " transition-colors group-hover:fill-amber-500" : ""
+                }`}
+                fontSize="22"
+              >
+                {label}
+              </text>
+            </>
+          );
+
+          return href ? (
+            <a key={label} href={href} className="group">
+              {node}
+            </a>
+          ) : (
+            <g key={label}>{node}</g>
+          );
+        })}
 
         <circle cx={root.x} cy={root.y} r="12" fill="#e7e5e4" />
         <text

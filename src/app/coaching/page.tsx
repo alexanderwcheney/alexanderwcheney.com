@@ -51,7 +51,7 @@ const Coaching = () => {
     <main className="mx-auto flex min-h-screen max-w-2xl flex-col gap-12 px-6 py-16">
       <Link
         href="/"
-        className="text-sm text-stone-400 transition-colors hover:text-amber-500"
+        className="text-sm text-stone-500 transition-colors hover:text-amber-700"
       >
         ← branches of life
       </Link>
@@ -60,7 +60,7 @@ const Coaching = () => {
         <h1 className="font-serif text-4xl md:text-5xl text-balance">
           Let&apos;s talk.
         </h1>
-        <div className="flex flex-col gap-4 font-serif text-lg leading-relaxed text-stone-300">
+        <div className="flex flex-col gap-4 font-serif text-lg leading-relaxed text-stone-700">
           <p>
             I&apos;ve always ended up helping people figure things out.
             I&apos;ve coached swimmers, managed soccer and competitive video
@@ -88,11 +88,11 @@ const Coaching = () => {
 
       {sections.map(({ heading, items }) => (
         <section key={heading} className="flex flex-col gap-4">
-          <h2 className="font-serif text-2xl text-amber-500">{heading}</h2>
-          <ul className="flex flex-col gap-2 font-serif text-lg leading-relaxed text-stone-300">
+          <h2 className="font-serif text-2xl text-amber-700">{heading}</h2>
+          <ul className="flex flex-col gap-2 font-serif text-lg leading-relaxed text-stone-700">
             {items.map((item) => (
               <li key={item} className="flex gap-3">
-                <span aria-hidden="true" className="text-stone-500">
+                <span aria-hidden="true" className="text-stone-400">
                   –
                 </span>
                 <span>{item}</span>
@@ -102,9 +102,9 @@ const Coaching = () => {
         </section>
       ))}
 
-      <section className="flex flex-col gap-6 border-t border-stone-800 pt-12">
-        <h2 className="font-serif text-2xl text-amber-500">Getting started</h2>
-        <p className="font-serif text-lg leading-relaxed text-stone-300">
+      <section className="flex flex-col gap-6 border-t border-stone-200 pt-12">
+        <h2 className="font-serif text-2xl text-amber-700">Getting started</h2>
+        <p className="font-serif text-lg leading-relaxed text-stone-700">
           The first step is a free intro call. We&apos;ll talk about what&apos;s
           going on for you and whether I&apos;m a good fit. If I&apos;m not,
           I&apos;ll do my best to point you somewhere better.
@@ -113,7 +113,7 @@ const Coaching = () => {
           href={calendlyUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="self-start rounded-full bg-amber-500 px-6 py-3 font-serif text-lg text-stone-950 transition-colors hover:bg-amber-400"
+          className="self-start rounded-full bg-amber-700 px-6 py-3 font-serif text-lg text-white transition-colors hover:bg-amber-800"
         >
           Book a free intro call
         </a>

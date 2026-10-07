@@ -30,17 +30,17 @@ const Home = () => {
                   branchY + 120
                 }, ${x} ${branchY}`}
                 fill="none"
-                stroke="#57534e"
+                stroke="#a8a29e"
                 strokeWidth="2"
               />
-              <circle cx={x} cy={branchY} r="8" fill="#f59e0b" />
+              <circle cx={x} cy={branchY} r="8" fill="#d97706" />
               <text
                 x={x}
                 y={branchY - 24}
                 textAnchor="middle"
-                fill="#e7e5e4"
+                fill="#1c1917"
                 className={`font-serif${
-                  href ? " transition-colors group-hover:fill-amber-500" : ""
+                  href ? " transition-colors group-hover:fill-amber-700" : ""
                 }`}
                 fontSize="22"
               >
@@ -58,12 +58,12 @@ const Home = () => {
           );
         })}
 
-        <circle cx={root.x} cy={root.y} r="12" fill="#e7e5e4" />
+        <circle cx={root.x} cy={root.y} r="12" fill="#44403c" />
         <text
           x={root.x}
           y={root.y + 40}
           textAnchor="middle"
-          fill="#a8a29e"
+          fill="#78716c"
           className="font-serif"
           fontSize="20"
         >
